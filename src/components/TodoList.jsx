@@ -6,8 +6,9 @@ const TodoList = () => {
     const {successMessage} = useAuth();
 
     const [editingIndex, setEditingIndex] = useState(null);
+
   return (
-    <div>
+    <div className='todo-list'>
         {successMessage && <p className="success-message">{successMessage}</p>}
         
         <div>
