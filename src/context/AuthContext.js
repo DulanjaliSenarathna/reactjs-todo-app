@@ -17,7 +17,12 @@ export const useAuth = () => {
       setSuccessMessage('Registration successful!');
       setTimeout(() => {
         navigate('/todos');
+       
       }, 2000);
+
+      setTimeout(()=>{
+        setSuccessMessage('');
+      },3000)
     };
   
     const login = (email, password) => {

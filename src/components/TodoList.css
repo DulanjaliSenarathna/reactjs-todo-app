@@ -6,11 +6,45 @@
 	--gray-2: #b0b0b0;
   }
 
-.success-message {
-    color: green;
+  .success-message {
+    color: #28a745; /* Brighter green */
     font-weight: bold;
-    margin: 10px 0;
+    margin: 15px 0;
+    padding: 15px 20px;
+    background-color: rgba(40, 167, 69, 0.1); /* Light green background */
+    border: 1px solid #28a745; /* Border matching the text color */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 1.2rem; /* Larger font size */
+    line-height: 1.6; /* Better readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for modern feel */
+    display: inline-block; /* Prevent full width */
+    text-align: center; /* Center-align text */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+    position: relative; /* For icon positioning */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
   }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px); /* Slide in from above */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .success-message::before {
+    content: '✔'; /* Success check icon */
+    font-size: 1.5rem;
+    color: #28a745;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
 
   .todo-list {
   max-width: 600px;
