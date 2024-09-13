@@ -65,14 +65,10 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const logout = () => {
-    localStorage.removeItem('user');
-    setUser(null);
-    navigate('/login');
-  };
+  
 
   return (
-    <AuthContext.Provider value={{ user, register, login, logout, successMessage }}>
+    <AuthContext.Provider value={{ user, register, login, successMessage }}>
       {children}
     </AuthContext.Provider>
   );

@@ -15,7 +15,7 @@ const child = {
   }
 
 const TodoList = () => {
-    const {successMessage, logout} = useAuth();
+    const {successMessage} = useAuth();
 
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState({title:'', description:''});
