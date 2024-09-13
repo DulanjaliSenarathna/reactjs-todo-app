@@ -1,7 +1,5 @@
 # React Js To Do Web Application
 
-# Todo App with Authentication
-
 This is a React-based Todo application that includes user authentication functionality using the React Context API and localStorage. The app allows users to register, log in, and manage todo items effectively.
 
 ## Features
