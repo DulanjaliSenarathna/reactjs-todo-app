@@ -1,70 +1,115 @@
-# Getting Started with Create React App
+# React Js To Do Web Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Todo App with Authentication
 
-## Available Scripts
+This is a React-based Todo application that includes user authentication functionality using the React Context API and localStorage. The app allows users to register, log in, and manage todo items effectively.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **User Authentication**:
+  - **Register**: Create a new user account with name, email, and password.
+  - **Login**: Access your account using email and password.
+  - **Include basic validation**
+  - **Provide feedback to users on successful login or registration**
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Todo List Management**:
+  - **Add Todo**: Create new todo items with a title and description.
+  - **Edit Todo**: Modify existing todo items.
+  - **Delete Todo**: Remove todo items from the list.
+  - **Toggle Completion**: Mark todos as completed or incomplete.
+  - **Display Date and Time**: See when each todo was added.
+  - **Display toast messages for adding and deleting todo item**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Responsive Design**: Optimized for both desktop and mobile views.
+- **Added smooth animations**
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **React.js**: Front-end library for building user interfaces.
+- **React Router**: For client-side routing.
+- **React Context API**: For managing authentication state.
+- **localStorage**: For storing user credentials and todo items.
+- **CSS**: For styling (SCSS compiled to CSS).
+- **react-hot-toast**: For display toast messages
+- **React icons**: Library for icons
+- **Formik-Yup**: Form validation
 
-### `npm run build`
+## Getting Started
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Node.js (v14 or later)
+- npm or yarn
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. **Clone the Repository**:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    git clone https://github.com/yourusername/todo-app.git
+    cd todo-app
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Install Dependencies**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    or
 
-## Learn More
+    ```bash
+    yarn install
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Start the Development Server**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    npm start
+    ```
 
-### Code Splitting
+    or
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    yarn start
+    ```
 
-### Analyzing the Bundle Size
+    This will start the app on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Usage
 
-### Making a Progressive Web App
+1. **Register a New User**:
+   - Go to the registration page.
+   - Fill in your name, email, and password.
+   - Submit the form to create a new account.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+2. **Log In**:
+   - Go to the login page.
+   - Enter your email and password.
+   - Submit the form to log in.
 
-### Advanced Configuration
+3. **Manage Todos**:
+   - After logging in, you will be redirected to the todo list page.
+   - Use the form to add new todos.
+   - Click on the edit icon to update a todo item.
+   - Click on the delete icon to remove a todo item.
+   - Toggle the checkbox to mark todos as completed or incomplete.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+4. **Log Out**:
+   - Click on the logout button to end your session and return to the login page.
 
-### Deployment
+# Screenshots
+![t1](https://github.com/user-attachments/assets/654a0640-0247-4665-b600-b75abefd632a)
+![t2](https://github.com/user-attachments/assets/8b5cd527-d740-4b50-adbd-bcaa5a762c66)
+![t3](https://github.com/user-attachments/assets/93e43662-a90a-4e86-9326-742f6bc60ef6)
+![t4](https://github.com/user-attachments/assets/d8b1d218-6229-4305-b6eb-873ecc5afd4d)
+![t5](https://github.com/user-attachments/assets/260a83f1-16ab-4c65-9595-3d50aa7db118)
+![t6](https://github.com/user-attachments/assets/bb1d56ed-d827-4ca0-8647-65ff3b0df687)
+![t7](https://github.com/user-attachments/assets/a42123cf-6d6a-4320-b6dc-33193fdb9809)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
