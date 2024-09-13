@@ -33,3 +33,7 @@
     background-color: #218838;
   }
   
+  .auth-form .error {
+    color: red;
+    font-size: 12px;
+  }
