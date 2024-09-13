@@ -86,7 +86,7 @@ const TodoList = () => {
 
   return (
     <>
-    <button className='logout' onClick={logout}>Logout</button>
+    <button className='logout-btn' onClick={logout}>Logout</button>
     <div className='todo-list'>
         {successMessage && <p className="success-message">{successMessage}</p>}
         
