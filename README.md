@@ -46,7 +46,7 @@ This is a React-based Todo application that includes user authentication functio
 1. **Clone the Repository**:
 
     ```bash
-    git clone https://github.com/yourusername/todo-app.git
+    git clone https://github.com/DulanjaliSenarathna/reactjs-todo-app.git
     cd todo-app
     ```
 
