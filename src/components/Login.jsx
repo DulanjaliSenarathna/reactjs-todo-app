@@ -1,5 +1,5 @@
 import React from 'react'
-import './Login.css'
+import './AuthStyles.css'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext';
 import * as Yup from 'yup';

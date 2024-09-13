@@ -1,5 +1,5 @@
 import React from 'react'
-import './Signup.css'
+import './AuthStyles.css'
 import { Link } from 'react-router-dom'
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
