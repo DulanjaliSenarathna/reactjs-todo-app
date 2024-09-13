@@ -5,9 +5,12 @@ import Signup from './components/Signup';
 import Login from './components/Login';
 import TodoList from './components/TodoList';
 import { AuthProvider } from './context/AuthContext';
+import { Toaster } from 'react-hot-toast';
 
 function App() {
+  
   return (
+    <>
     <Router>
     <AuthProvider>
     <div className="app">
@@ -19,6 +22,12 @@ function App() {
       </div>
     </AuthProvider>
     </Router>
+    <Toaster position = 'bottom-right' toastOptions={{
+      style:{
+        fontSize:'1.1rem'
+      }
+    }}/>
+    </>
   );
 }
 

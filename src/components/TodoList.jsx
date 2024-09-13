@@ -2,8 +2,9 @@ import React, { useEffect, useState } from 'react'
 import './TodoList.css'
 import { useAuth } from '../context/AuthContext'
 import {MdDelete, MdEdit} from 'react-icons/md';
-import {motion, useMotionValue, useTransform} from 'framer-motion';
+import {motion} from 'framer-motion';
 import CheckButton from './UI/CheckButton';
+import { toast } from 'react-hot-toast';
 
 const child = {
     hidden: {y:20, opacity:0},
@@ -26,6 +27,7 @@ const TodoList = () => {
         setTodos(updatedTodos);
         localStorage.setItem('todos', JSON.stringify(updatedTodos));
         setNewTodo({ title: '', description: '' });
+        toast.success('ToDo added successfully')
       };
 
       const handleEditTodo = (index) => {
@@ -48,6 +50,7 @@ const TodoList = () => {
         const updatedTodos = todos.filter((_, i) => i !== index);
         setTodos(updatedTodos);
         localStorage.setItem('todos', JSON.stringify(updatedTodos));
+        toast.success('ToDo deleted successfully')
       };
 
       const handleCheck = (index) =>{
