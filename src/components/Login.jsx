@@ -44,7 +44,7 @@ const Login = () => {
                 ) : null}
             </div>
             <button type="submit">Login</button>
-            <p>Don't have an account? <Link to='/login'>Register here</Link> </p>
+            <p>Don't have an account? <Link to='/signup'>Register here</Link> </p>
         </form>
     </div>
   )

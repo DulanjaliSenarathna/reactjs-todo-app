@@ -15,7 +15,7 @@ const child = {
   }
 
 const TodoList = () => {
-    const {successMessage} = useAuth();
+    const {successMessage, logout} = useAuth();
 
     const [todos, setTodos] = useState([]);
     const [newTodo, setNewTodo] = useState({title:'', description:''});
@@ -86,11 +86,13 @@ const TodoList = () => {
 
   return (
     <>
+    <button className='logout' onClick={logout}>Logout</button>
     <div className='todo-list'>
         {successMessage && <p className="success-message">{successMessage}</p>}
         
         <div>
             <h2>{editingIndex !== null ? 'Edit Todo' : 'Add Todo'}</h2>
+            
 
             <input type="text" placeholder='Title' value={newTodo.title}
             onChange={(e) => setNewTodo({ ...newTodo, title: e.target.value })}/>
