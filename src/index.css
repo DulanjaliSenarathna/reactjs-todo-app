@@ -13,3 +13,24 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  form, .todo-container {
+    padding: 15px;
+  }
+
+  button {
+    padding: 14px;
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  li {
+    padding: 10px;
+  }
+}
